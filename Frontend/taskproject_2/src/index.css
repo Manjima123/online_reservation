@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.8;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #16212d;
+}
+
+.header .links {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.showcase {
+  background: url("https://cdn-images-1.medium.com/max/1600/1*1rzrw04b6K5Ed9e5_PHaNQ.jpeg")
+    no-repeat center/cover;
+  height: 33.5rem;
+}
+
+.showcase .showcase-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  text-align: center;
+  color: #fff;
+}
+
+.showcase .showcase-overlay h1 {
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+
+.destinations {
+  padding: 50px;
+  text-align: center;
+}
+
+.destinations h3 {
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.destinations .grid div {
+  background-color: #f1f1f1;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.destinations .grid div img {
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #333;
+  padding: 40px;
+}
+
+.footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer ul li {
+  margin: 0 20px;
+}
+
+.footer ul li button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.footer ul li button:hover {
+  background-color: #2c7f86;
+}
+
+/* Login and SignUp */
+/* .login .form-control {
+  display: flex;
+  flex-direction: column;
+} */
+.login .form-control {
+  width: 55%;
+  height: 40%;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 15%;
+}
+.login .form-control input {
+  margin: 5px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  width: 80vw;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.login .form-control button {
+  background-color: #2c7f86;
+  padding: 8px;
+  border: 2px solid #2c7f86;
+  color: #fff;
+  font-family: inherit;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 5px;
+  /* margin-left: 75%; */
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.login .form-control button:hover {
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .showcase {
+    background-position: top;
+  }
+
+  .showcase .showcase-overlay h1 {
+    font-size: 64px;
+  }
+
+  .showcase .showcase-overlay p {
+    font-size: 18px;
+  }
+
+  .destinations .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .destinations .grid div img {
+    height: 150px;
+    width: 300px;
+  }
+
+  .footer ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .login .form-control input {
+    width: 50vw;
+  }
+}
+.grid {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 12px;
+  /*background-color: rgb(221, 221, 152);*/
+  background: url("http://welcomenri.com/Tourism/Incredible%20India/images/konkan-train.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item {
+  margin-top: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  min-height: 540px;
+  margin-bottom: 20px;
+  background-color: rgba(195, 241, 238, 0.2);
+}
+.para {
+  padding: 0 10px 0 10px;
+  font-size: 15px;
+  text-align: justify;
+}
+#ip1 {
+  margin-left: 70px;
+}
+
+#ip2 {
+  margin-left: 70px;
+}
+
+#ip3 {
+  width: 400px;
+  margin-left: 10px;
+}
+#body {
+  /* background-color: azure; */
+  /* margin-top: 60px;
+  /* border: 2px solid black; */
+  /* margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 30px;  */
+}
+.full {
+  /* background-color: rgb(205, 185, 224); */
+  background: url(https://images6.alphacoders.com/702/702963.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 560px;
+}
+#btnc {
+  /* color: #616060; */
+  color: rgb(24, 20, 20);
+  margin-left: 210px;
+  background-color: #5a2f2b;
+  /* background-color: "red"; */
+  width: 80px;
+  height: 50px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* .profilepage{
+  width: 100%;
+  height: 100%;
+}
+
+ .row.content {height: 100%}
+
+  /* Set gray background color and 100% height */
+    .sidenav {
+      /* background-color: #111f47; */
+      background: url(https://tse1.mm.bing.net/th?id=OIP.aLluUjKUaE6Qrqua0qhzPAHaEK&pid=Api&P=0);
+      height: 100%;
+      
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    } */
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container1 {
+   background: url(https://cdn-images-1.medium.com/max/1600/1*1rzrw04b6K5Ed9e5_PHaNQ.jpeg);
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+  gap: 5px;
+  
+  padding: 10px;
+}
+
+.grid-container1 > div {
+   background-color: rgba(255, 255, 255, 0.8); 
+ 
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+.bckc {
+  font-size: 17px;
+  font-family: "calibri";
+  margin-left: 5px;
+  width: 110px;
+  background-color: #b8afeb;
+  color: black;
+}
